@@ -1,21 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <time.h>
-
-void soundmeter(int j, char A) {
-	srand((unsigned)time(NULL));
-	int i, k, l;
-	for (i = 0; i < 100; i++) {
-		system("cls");
-		for (k = 1; k <= j; k++) {
-			for (l = 0; l < rand() % 80 + 1; l++) {
-				printf("%c", A);
-			}
-			printf("%d\n", k);
-		}
-	}
-}
 
 int drawbox(int width, int height, char wall, int walks, char player) {
 	int i, j, rkfh = 2, tpfh = 2; //rkfh=가로, tpfh=세로
