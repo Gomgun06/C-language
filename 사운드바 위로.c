@@ -1,4 +1,8 @@
-srand((unsigned)time(NULL));
+#include <stdio.h>
+
+int main(void)
+{
+	srand((unsigned)time(NULL));
 	int k, jul, met, sound[60];
 
 	for (k = 0; k < 200; k++) {
@@ -14,3 +18,5 @@ srand((unsigned)time(NULL));
 			printf("\n");
 		}
 	}
+	return 0;
+}
