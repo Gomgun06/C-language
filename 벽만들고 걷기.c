@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 int drawbox(int width, int height, char wall, int walks, char player) {
 	int i, j, rkfh = 2, tpfh = 2; //rkfh=가로, tpfh=세로
