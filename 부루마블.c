@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include <time.h>
 
 int main(void)
@@ -9,7 +7,7 @@ int main(void)
 	int answer = 0, ppoint = 0, pdice1 = 0, pdice2 = 0, cpoint = 0, cdice1 = 0, cdice2 = 0;
 	int pstate = 0, cstate = 0, escape = 1, j;
 	while (1) {
-		printf("ÁÖ»çÀ§¸¦ ±¼¸®½Ã°Ú½À´Ï±î? (0, 1)? ");
+		printf("ì£¼ì‚¬ìœ„ë¥¼ êµ´ë¦¬ì‹œê² ìŠµë‹ˆê¹Œ? (0, 1)? ");
 		scanf("%d", &answer);
 		if (answer != 0 && answer != 1)
 		{
@@ -452,7 +450,7 @@ int main(void)
 				}
 				j++;
 			}
-			printf("ÄÄÇ»ÅÍ°¡ ±¼¸³´Ï´Ù\n");
+			printf("ì»´í“¨í„°ê°€ êµ´ë¦½ë‹ˆë‹¤\n");
 			system("timeout 1 > NULL");
 			cdice1 = (rand() % 6) + 1;
 			cdice2 = (rand() % 6) + 1;
@@ -887,7 +885,7 @@ int main(void)
 				int r = 0;
 				while (r < 3) {
 					r++;
-					printf("¼¶¿¡ °¤Çû½À´Ï´Ù. ÁÖ»çÀ§¸¦ ±¼¸®½Ã°Ú½À´Ï±î? (0, 1)? ");
+					printf("ì„¬ì— ê°‡í˜”ìŠµë‹ˆë‹¤. ì£¼ì‚¬ìœ„ë¥¼ êµ´ë¦¬ì‹œê² ìŠµë‹ˆê¹Œ? (0, 1)? ");
 					scanf("%d", &answer);
 					if (answer != 0 && answer != 1)
 					{
@@ -904,7 +902,7 @@ int main(void)
 						}
 						if (pdice1 != pdice2) {
 							escape = 0;
-							printf("%d, %d Å»Ãâ ½ÇÆĞ!, ÄÄÇ»ÅÍ°¡ ±¼¸³´Ï´Ù.\n<3ÃÊ ´ë±â>", pdice1, pdice2);
+							printf("%d, %d íƒˆì¶œ ì‹¤íŒ¨!, ì»´í“¨í„°ê°€ êµ´ë¦½ë‹ˆë‹¤.\n<3ì´ˆ ëŒ€ê¸°>", pdice1, pdice2);
 							system("timeout 3 > NULL");
 							cdice1 = (rand() % 6) + 1;
 							cdice2 = (rand() % 6) + 1;
@@ -1343,7 +1341,7 @@ int main(void)
 						else if (pdice1 == pdice2)
 						{
 							escape = 1;
-							printf("%d, %d Å»Ãâ ¼º°ø!, ÄÄÇ»ÅÍ°¡ ±¼¸³´Ï´Ù.\n>", pdice1, pdice2);
+							printf("%d, %d íƒˆì¶œ ì„±ê³µ!, ì»´í“¨í„°ê°€ êµ´ë¦½ë‹ˆë‹¤.\n>", pdice1, pdice2);
 							system("timeout 1 > NULL");
 							cdice1 = (rand() % 6) + 1;
 							cdice2 = (rand() % 6) + 1;
@@ -1780,7 +1778,7 @@ int main(void)
 					else if (answer == 0)
 					{
 						escape = 0;
-						printf("Å»Ãâ ½ÇÆĞ!, ÄÄÇ»ÅÍ°¡ ±¼¸³´Ï´Ù.\n<3ÃÊ ´ë±â>");
+						printf("íƒˆì¶œ ì‹¤íŒ¨!, ì»´í“¨í„°ê°€ êµ´ë¦½ë‹ˆë‹¤.\n<3ì´ˆ ëŒ€ê¸°>");
 						system("timeout 3 > NULL");
 						cdice1 = (rand() % 6) + 1;
 						cdice2 = (rand() % 6) + 1;
@@ -2219,9 +2217,9 @@ int main(void)
 		}
 		if (ppoint >= 50 || cpoint >= 50) {
 			if (ppoint >= 50)
-				printf("½ÂÀÚ´Â ´ç½Å\n");
+				printf("ìŠ¹ìëŠ” ë‹¹ì‹ \n");
 			else if (cpoint >= 50)
-				printf("½ÂÀÚ´Â ÄÄÇ»ÅÍ\n");
+				printf("ìŠ¹ìëŠ” ì»´í“¨í„°\n");
 			break;
 		}
 	}
